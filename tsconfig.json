@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true
+  },
+  "include": ["./src", "index.d.ts"]
+}

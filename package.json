@@ -1,0 +1,80 @@
+{
+  "name": "vite-plugin-vue27-jsx",
+  "version": "1.0.0",
+  "description": "Vite plugin for Vue2.7.x",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -w -p . --incremental --skipLibCheck",
+    "build": "rm -rf dist && tsc -p . --skipLibCheck",
+    "dev:unbuild": "unbuild --stub",
+    "build:unbuild": "unbuild",
+    "test": "jest --clearCache && jest --runInBand --forceExit"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite",
+    "vue2",
+    "vue2.7"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/parser": "^7.16.10",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@babel/plugin-transform-typescript": "^7.16.8",
+    "@rollup/pluginutils": "^4.1.1",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "consolidate": "^0.16.0",
+    "debug": "^4.3.2",
+    "fs-extra": "^9.1.0",
+    "hash-sum": "^2.0.0",
+    "magic-string": "^0.25.7",
+    "prettier": "^2.4.1",
+    "querystring": "^0.2.1",
+    "rollup": "^2.58.0",
+    "slash": "^3.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0 || ^4.0.0",
+    "vue": "^2.7.0-0"
+  },
+  "devDependencies": {
+    "@types/consolidate": "^0.14.1",
+    "@types/debug": "^4.1.7",
+    "@types/fs-extra": "^9.0.13",
+    "@types/hash-sum": "^1.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
+    "@types/puppeteer": "^5.4.4",
+    "acorn": "^8.7.0",
+    "acorn-jsx": "^5.3.2",
+    "bumpp": "^7.1.1",
+    "conventional-changelog-cli": "^2.1.1",
+    "esno": "^0.16.3",
+    "execa": "^4.1.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "picocolors": "^1.0.0",
+    "puppeteer": "^10.4.0",
+    "source-map": "0.6.1",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.4.3",
+    "unbuild": "^1.1.2",
+    "vite": "^2.7.10",
+    "vue": "^2.7.0-beta.8",
+    "yorkie": "^2.0.0"
+  }
+}
